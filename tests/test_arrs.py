@@ -8,6 +8,7 @@ class TestArrs(unittest.TestCase):
     def test_get(self):
         self.assertEqual(arrs.get([1, 2, 3], 1, "test"), 2)
         self.assertEqual(arrs.get([], -1, "test"), "test")
+
         self.assertEqual(arrs.get([5, 8, 4, 6], 3, "test"), 6)
         self.assertEqual(arrs.get([5, 8, 4, 6], 1, "test"), 8)
         #
